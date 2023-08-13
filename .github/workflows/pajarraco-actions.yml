@@ -1,13 +1,24 @@
 name: Pajarraco Actions
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 jobs:
-  Pajarraco-Actions:
+  build:
+
     runs-on: ubuntu-latest
-    steps:
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20.5.x
-          cache: npm
-      - run: ./npm start
+
+    strategy:
+			matrix:
+				node-version: [14.x, 16.x, 18.x, 20.x]
+
+		steps:
+			- uses: actions/checkout@v3
+			- name: Use Node.js ${{ matrix.node-version }}
+				uses: actions/setup-node@v3
+				with:
+					node-version: ${{ matrix.node-version }}
+			- run: npm ci
+			- run: npm start
