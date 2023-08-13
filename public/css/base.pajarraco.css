@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+#logo {
+	position:absolute;
+	width:400px;
+	right: 5%;
+	bottom: 5%;
+}
+#menu {
+	position:absolute;
+	left:5%;
+	width:100px;
+	bottom: 5%;
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+}
+#player {
+	text-align: center;
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	display: block;
+}
+body,td,th {
+	font-family: Trebuchet MS;
+	color: #FFF;
+}
+body {
+	background-image: url(../images/bg01.jpg);
+	background-repeat: repeat-x;
+	background-color: #FFFFFF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #C60;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #960;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #C60;
+}
+a:active {
+	text-decoration: none;
+	color: #960;
+}

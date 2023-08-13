@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* 
+    Document   : style
+    Created on : 27/04/2011, 10:21:15 AM
+    Author     : pajarraco
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS3/
+*/
+body,td,th {
+	font-family: "Trebuchet MS";
+	color: #FFF;
+}
+body {
+	background-image: url(../images/bg01.jpg);
+	background-repeat: repeat-x;
+	background-color: #000000;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+root { 
+    display: block;
+}
+footer {
+	font-size: .8em;
+	text-align: right;
+	margin-right: 1em;
+	clear: both;
+}
+header h1 {
+	font-size: 3em;
+	text-transform: lowercase;
+	color: #CCC;
+	font-weight: lighter;
+	text-decoration: none;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-bottom: .5em;
+	padding: 0em;
+}
+article {
+	clear: both;
+}
+article h1 {
+	color: #999;
+	font-size: 1.8em;
+	margin-left: 1em;
+	display: block;
+	padding-top: 1em;
+	padding-right: 0px;
+	padding-bottom: .5em;
+	padding-left: 0px;
+}
+
+section {
+	float: left;
+	margin: 0.3em;
+	padding: 0.5em;
+	border: 1px solid #333;
+	display: block;
+}
+section a  {
+	text-align: center;
+}
+section desc ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+section desc ul li {
+	list-style-type: none;
+	font-size: .9em;
+	color: #CCC;
+}

@@ -1,0 +1,64 @@
+/* 
+    Document   : style
+    Created on : 27/04/2011, 10:21:15 AM
+    Author     : pajarraco
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS3/
+*/
+
+body, td, th {
+    font-family: Trebuchet MS;
+    overflow: hidden;
+}
+
+body {
+    background-image: url(../images/bg01.jpg);
+    background-repeat: repeat-x;
+    background-color: #FFFFFF;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+root {
+    display: block;
+}
+
+logo {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+section {
+    top: -100px;
+    left: -200px;
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    height: 25px;
+    padding: 5px 10px 0 10px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-transform: rotate(-25deg);
+    -webkit-transform: rotate(-25deg);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+section:hover {
+    background: rgba(0, 1, 0, 0.8);
+    color: white;
+}
